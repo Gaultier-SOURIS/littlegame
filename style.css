@@ -1,0 +1,58 @@
+/* Ajoutez ces styles à votre fichier style.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .main_card-img {
+    text-align: center;
+  }
+  
+  .main_card-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .pads {
+    width: 100px;
+    height: 100px;
+    border: 6px solid rgb(131, 131, 131);
+    border-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+ 
