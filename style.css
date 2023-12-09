@@ -1,58 +1,96 @@
-/* Ajoutez ces styles à votre fichier style.css */
+body{
+  background-color: rgb(255, 158, 61);
+}
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    height: 100vh;
-  }
+.header_rules-button {
+  width: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
   
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-  }
-  
-  .header {
-    text-align: center;
-    width: 100%;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .main_card-img {
-    text-align: center;
-  }
-  
-  .main_card-img img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .pads {
-    width: 100px;
-    height: 100px;
-    border: 6px solid rgb(131, 131, 131);
-    border-radius: 10px;
-    background-color: #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
- 
+}
+
+.header_h1 {
+  text-align: center;
+  font-family: 'Gasoek One', sans-serif;
+}
+
+.header_rules-button {
+  width: 50px;
+  position: absolute;
+  left: 8em;
+}
+
+.header_h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.main-theme-pads {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  min-height: 75vh;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  position: relative;
+  font-size: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main_theme {
+  padding-bottom: 4rem;
+}
+
+.main_img-theme {
+  box-shadow: rgb(30, 27, 27) -1px 2px 5px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.main_theme-title{
+  font-family: 'Rye', serif;
+}
+
+.row {
+  display: flex;
+}
+
+.main_pads {
+  margin-top: 3em;
+}
+
+.pad {
+  width: 7em;
+  height: 7em;
+  background-color: #2d2828;
+  box-shadow: rgb(30, 27, 27) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5px;
+  margin: 0.25rem;
+  border : 2px solid grey;
+}
+
+.validation-button {
+  width: 7em;
+  height: 3em;
+  background-color: #2baa1d;
+  box-shadow: rgb(30, 27, 27) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid grey;
+  margin-top: 0.25rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
