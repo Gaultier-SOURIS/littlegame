@@ -30,6 +30,11 @@ const app = {
 
                 padDiv.appendChild(radioInput); // Ajoute le bouton radio au pad
                 padDiv.appendChild(label); // Ajoute l'étiquette au pad
+
+                padDiv.addEventListener('click', app.clickOnPads) // ajoute un ecouteur d'evenement sur le pad pr activer le son
+                padDiv.addEventListener('mousedown', app.changeColorPad) // ajoute un ecouteur d'evenement sur le pad pr changer couleur
+                padDiv.addEventListener('mouseup', app.removeColorPads) // ajoute un ecouteur d'evenement sur le pad pr restaurer la couleur
+
             }
         }
     },
@@ -48,7 +53,22 @@ const app = {
                 this.checked = true;
             });
         });
-    }
+    },
+
+    clickOnPads: function(event) {
+     const clickPad = event.currentTarget;//cible le pad sur lequel on clique
+    },
+    changeColorPad: function(event) {
+        console.log('je change la couleur');
+        const clickPad = event.currentTarget;//cible le pad sur lequel on clique
+        clickPad.classList.add("pad-color");// change la couleur du pad
+        
+    },
+    removeColorPads: function(event) {
+        console.log('je restaure la couleur');
+        const clickPad = event.currentTarget;//cible le pad sur lequel on clique
+        clickPad.classList.remove("pad-color");//restaure la couleur du pad
+    },
 };
 
 app.init(); // Appelle la fonction initiale pour lancer l'application
